@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color:aqua;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #voilet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #clr{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="clr">
+        <span id="white" class="btn" onclick="changebg('#ffffff')"></span>
+        <span id="aqua" class="btn" onclick="changebg('#00ffff')"></span>
+        <span id="blue" class="btn" onclick="changebg('#0000ff')"></span>
+        <span id="orange" class="btn" onclick="changebg('#ffa500')"></span>
+        <span id="voilet" class="btn" onclick="changebg('#ce9aff')"></span>
+        <span id="black" class="btn" onclick="changebg('#000000')"></span>
+    </div>
+    <h1 class="txt">about us</h1>
+    <p class="txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium accusamus quae obcaecati, eos neque expedita esse, explicabo aliquid animi beatae nihil vel! Sequi error vitae facilis, et libero voluptatum voluptate nulla quas commodi, fugiat mollitia quod perferendis, quisquam nam saepe ex. Quam, dolores! Enim maxime omnis illo earum ex aspernatur odio at sint adipisci magni, nisi voluptatum? Odit ex repellendus non ut! Odit hic nihil eum veniam fugiat! Earum culpa ipsam vitae! At necessitatibus cum a laborum cupiditate, ipsam, fugiat voluptatum aliquid reiciendis, dolorum molestias! Assumenda quia laudantium vitae! At possimus porro temporibus praesentium cum esse, est eveniet dolorum a commodi iure sint quibusdam consequatur eligendi facere inventore tempora provident! Tempore maiores neque repellat repudiandae sint. Assumenda dicta minima officiis! Maxime fugit sapiente inventore suscipit veniam vitae cumque est! Sunt asperiores architecto similique libero magni autem explicabo, nisi, officiis recusandae eveniet itaque? Distinctio voluptas recusandae aut, quo doloribus ut reiciendis, magni, soluta optio sit cum et vero pariatur? Amet possimus et dicta esse assumenda omnis modi atque, illum aspernatur natus at porro ad excepturi? Repellat dicta modi, illo aperiam voluptatibus laudantium, inventore, eveniet nihil expedita amet labore odio. Quibusdam magni doloribus eum sint fugiat quasi. Consequuntur architecto maxime atque accusantium minima, tempore necessitatibus dignissimos quo ipsum totam repellat, optio quis. Quidem, officiis. Sint expedita beatae ipsa ipsum incidunt alias, perferendis reiciendis eveniet? Cupiditate, fuga animi? Alias tempora error iste voluptates, sit fugiat reiciendis eos quam saepe asperiores est ea quaerat neque assumenda nesciunt repellendus eum labore similique quae. Incidunt cupiditate sint eius porro esse laboriosam voluptates est, quae ab quaerat labore? Unde hic dolores harum distinctio quae? Repellat consequatur culpa similique! Iste, dolore! Facere sequi repellendus error suscipit vel ducimus repudiandae molestias tempore numquam? Voluptate labore voluptas nisi temporibus doloribus, culpa adipisci, aliquam numquam veritatis nam officia voluptatum ratione? Ea dicta harum, iste est architecto laudantium laboriosam minus, corporis sapiente culpa laborum quod ducimus voluptas quasi iure id quia. Iure repellendus id omnis, recusandae beatae debitis iusto distinctio. Veritatis aliquid quo laudantium nihil amet esse eos a maiores delectus ab, quia deleniti aut voluptatem illo expedita architecto aperiam obcaecati ex odio! Et dolorem ex culpa harum necessitatibus ea molestiae natus impedit nesciunt inventore eveniet cumque incidunt voluptates hic voluptate quo animi illo eius possimus sunt, facilis quae excepturi explicabo assumenda. Repellat asperiores vitae, maiores vero tempore voluptates minus cum modi corporis quasi! Suscipit distinctio tenetur tempora voluptates minus nobis debitis ex ut sequi doloribus, soluta odio natus dolore aperiam nihil deserunt sit repellat blanditiis vero. Officia vel illo placeat ipsum veniam, debitis veritatis quos excepturi obcaecati quasi natus adipisci cum laboriosam consectetur. Blanditiis sequi alias repellendus quisquam numquam labore a facere! Illo harum quis quidem voluptatibus officia ad. Ullam aspernatur consequuntur cupiditate, eaque laboriosam totam id molestiae dolorem nobis modi velit sed vel eos pariatur fugit consectetur. Expedita repudiandae voluptatum, repellendus ex a in amet tempore sed velit doloremque quis sequi facere ab eum obcaecati quasi saepe qui enim corrupti! Tempora doloribus minus possimus, quis culpa qui sint rem.
+    </p>
+    <script>
+        function changebg(color){
+            document.body.style.backgroundColor=color;
+        let txt=document.getElementsByClassName("txt");
+        if(color=="#000000"){
+            for(let i of txt){
+                i.style.color="white";
+            }
+        }else{
+            for (let i of txt) {
+                i.style.color="black";
+            }
+        }
+        }
+    </script>
+</body>
+</html>
